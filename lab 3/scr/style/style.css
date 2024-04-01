@@ -1,0 +1,29 @@
+.clock {
+  font-size: 8rem;
+  font-family: Special Elite;
+  color: #FFC0CB; 
+  text-shadow: 2px 0 10px; 
+  animation: neonGlow 7s ease-in-out infinite alternate; 
+   
+}
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 20px #DB7093, 0 0 30px #DB7093, 0 0 40px #DB7093, 0 0 50px #DB7093, 0 0 60px #DB7093, 0 0 70px #DB7093, 0 0 80px #DB7093; 
+    }
+    to {
+        text-shadow: 0 0 20px #DC143C, 0 0 30px #DB7093, 0 0 40px #DB7093, 0 0 50px #DB7093, 0 0 60px #DB7093, 0 0 70px #DB7093, 0 0 80px #DB7093; 
+    }
+}
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	animation: changeBackgroundColor 30s infinite alternate;
+}
+
+ @keyframes changeBackgroundColor {
+      0% { background-color:MidnightBlue ; }
+      50% { background-color:DarkSlateBlue ; }
+      100% { background-color: RosyBrown; }
+    }
